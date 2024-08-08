@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Meal Generator</title>
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="row text-center">
+      <h3>Feeling hungry?</h3>
+      <h5>Get a random meal by clicking below</h5>
+      <button class="button-primary" id="get_meal">Get Meal 🍔</button>
+      <button class="button-primary" id="toggle_dark_mode">Toggle Dark Mode</button>
+      <h5>Search for Meals by Ingredients</h5>
+      <input type="text" id="ingredient_search" placeholder="Enter ingredient..." />
+      <button id="search_ingredient_btn">Search</button>
+    </div>
+    <div id="meal" class="row meal"></div>
+    <h5>Meal History</h5>
+    <ul id="meal_history"></ul>
+  </div>
+
+  <div class="loading" id="loading">Loading...</div>
+
+  <div class="social-panel-container">
+    <div class="social-panel">
+      <button class="close-btn">&times;</button>
+      <p>
+        <i class="fab fa-facebook-f"></i>
+        <a href="#">Facebook</a>
+        <i class="fab fa-twitter"></i>
+        <a href="#">Twitter</a>
+        <i class="fab fa-instagram"></i>
+        <a href="#">Instagram</a>
+      </p>
+      <h4>Follow Us</h4>
+      <ul>
+        <li><a href="#" class="fab fa-facebook-f"></a></li>
+        <li><a href="#" class="fab fa-twitter"></a></li>
+        <li><a href="#" class="fab fa-instagram"></a></li>
+      </ul>
+    </div>
+  </div>
+  <button class="floating-btn">Follow Us</button>
+  <div class="floating-text">Follow us for more updates <a href="#">Click Here</a></div>
+
+  <script src="./meal.js"></script>
+</body>
+</html>
